@@ -1,16 +1,51 @@
 <header>
-   <article class="header__top-bar">
-        <section class="header__contact">
-            <p class="header__contact-item">Atendimento ao cliente: <vtex.cmc:RaphaelFreireInfoPhone /></p>
-        </section>
-        <section>
-            <i class="fas fa-bars"></i>
-            <a href="#">Meus <b>Pedidos</b></a>
-        </section>
-   </article>
+    <article class="header__top">
 
-   <article class="header__center">
-       <img src="/arquivos/raphael-freire-logo-eplus.png" alt="Logo Code Plus" />
-   </article>
+        <ul class="contact__list">
+            <li class="list__item">Atendimento ao cliente:
+                <vtex.cmc:RaphaelFreireInfoPhone />
+            </li>
+            <li class="list__item">Whatsapp:
+                <vtex.cmc:RaphaelFreireInfoWhatsapp />
+            </li>
+        </ul>
+
+        <a class="my__requests" href="#"><i class="fas fa-bars"></i>Meus <b>Pedidos</b></a>
+
+    </article>
+
+    <article class="header__center">
+
+        <img class="center__logo" src="/arquivos/raphael-freire-logo-eplus.svg" alt="Logo Code Plus" />
+
+        <form class="center__form" action="#">
+            <input class="form__input" type="text" placeholder="Digite Aqui" name="search" />
+            <button class="form__button" type="submit">
+                <img class="button__icon" src="/arquivos/raphael-freire-lupa-busca.svg" alt="Icone Login" />
+            </button>
+        </form>
+
+        <div class="center__login">
+            <img class="login__icon" src="/arquivos/raphael-freire-login-cadastre-se.svg" alt="Icone Login" />
+            <span class="login__text">Login/Cadastre-se</span>
+        </div>
+
+        <div class="center__cart">
+            <img class="cart__icon" src="/arquivos/raphael-freire-icon-carrinho.svg" alt="Icone Carrinho de Compra" />
+            <span class="cart__text">1 item(S)</span>
+        </div>
+
+    </article>
+
+    <nav class="header__footer">
+        <ul class="footer__list">
+            <li class="list__item">Test Category</li>
+            <li class="list__item">Desenvolvimento</li>
+            <li class="list__item">Implatação</li>
+            <li class="list__item">Design</li>
+            <li class="list__item">Marketing</li>
+            <li class="list__item">Suporte</li>
+        </ul>
+    </nav>
 
 </header>

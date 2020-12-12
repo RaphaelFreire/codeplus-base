@@ -1,7 +1,11 @@
 // Exemplo
 
-$cinza-claro: #B9B9B9;
-$cinza-medio: #7F7F7F;
+$cinza-claro: #F2F2F2;
+$cinza-claro-ligth: #F9F9F9;
+$cinza-medio: #D0D0D0;
+$verde: #00B916;
+
+
 $cinza-escuro: #343434;
 $preto: #000;
 $branco: #fff;
@@ -11,7 +15,7 @@ $vermelho: #DF5252;
 $azul: #4965AF;
 $roxo: #C8D1E7;
 $lilas: #BA007C;
-$verde: #00EDB8;
+
 $bege: #EDE1CD;
 $verde-saturado: #69C8B3;
 $laranja: orange;
@@ -75,3 +79,15 @@ $bc-profile-button: black;
 $color-profile-button: white; 
 $hover-bc-profile-button: #ebebeb; 
 $hover-color-profile-button: white; 
+
+
+// Extra small screen / phone
+$xs: 0;
+// Small screen / phone
+$sm: 576px;
+// Medium screen / tablet
+$md: 768px;
+// Large screen / desktop
+$lg: 992px;
+// Extra large screen / wide desktop
+$xl: 1600px;
