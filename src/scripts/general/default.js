@@ -1,7 +1,18 @@
-const Default = {
-    init: function () {
-        console.log('testeeee')
-    }
-}
+const menu = require('../modules/menu');
 
-module.exports = Default
+const Default = {
+  init: function() {
+    Default.menuInit();
+  },
+
+  menuInit: () => {
+    const menuConfig = {
+      tree: 3,
+      mainClass: '.nav__list'
+    };
+
+    menu.init(menuConfig);
+  },
+};
+
+module.exports = Default;

@@ -1,7 +1,5 @@
 const Home = {
-    init: function () {
+  init: function () {},
+};
 
-    }
-}
-
-module.exports = Home
+module.exports = Home;
