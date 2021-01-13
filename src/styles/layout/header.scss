@@ -179,16 +179,14 @@ header {
         &:hover {
           background-color: $verde;
           color: $branco;
-         
 
-          .nav__list__nivel{
+          .nav__list__nivel {
             display: flex;
             flex-direction: column;
             width: 200px;
             text-transform: initial;
             background-color: $cinza-medio;
             color: $branco;
-           
 
             .nav__list__nivel-item {
               display: flex;
@@ -197,14 +195,14 @@ header {
               flex-direction: column;
               height: 35px;
               border-top: 1px solid $verde;
-              
+
               position: relative;
 
-              &:hover{
+              &:hover {
                 background-color: $cinza-claro;
               }
 
-              .nav__list__nivel__nivel{
+              .nav__list__nivel__nivel {
                 align-items: center;
                 justify-content: center;
                 width: 200px;
@@ -223,10 +221,6 @@ header {
                     display: flex;
                     align-items: center;
                     justify-content: center;
-
-                    &:hover {
-                      opacity: 0.9;
-                    }
                   }
                 }
 
@@ -238,7 +232,7 @@ header {
           }
         }
 
-        .nav__list__nivel{
+        .nav__list__nivel {
           display: none;
           position: absolute;
           top: 45px;
