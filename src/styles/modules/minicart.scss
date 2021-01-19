@@ -1,0 +1,180 @@
+.minicart {
+  width: 500px;
+  height: 100%;
+
+  // padding-top: 50px;
+
+  position: fixed;
+  top: 0;
+  right: 0;
+
+  background-color: #fff;
+  z-index: 1;
+
+  &__top {
+    position: absolute;
+    top: 0;
+    right: 0;
+    background-color: $preto;
+    width: 550px;
+    height: 50px;
+
+    display: flex;
+    align-items: center;
+
+      .minicart__close-top{
+        color: $branco;
+        cursor: pointer;
+        font-weight: bold;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+      }
+
+      .minicart__title-top{
+        color: $branco;
+        width: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-transform: uppercase;
+      }
+
+  }
+
+  &__middle {
+    position: absolute;
+    top: 50px;
+    width: 500px;
+    height: 75%;
+    overflow-y: scroll;
+    padding: 20px;
+
+    &::-webkit-scrollbar-track {
+      background-color: #f4f4f4;
+    }
+    &::-webkit-scrollbar {
+      width: 6px;
+      background: #f4f4f4;
+    }
+    &::-webkit-scrollbar-thumb {
+      background: #dad7d7;
+    }
+
+    .minicart__product {
+      display: flex;
+      justify-content: space-between;
+      border-bottom: 1px solid $cinza-medio;
+      padding: 20px;
+      position: relative;
+
+      .minicart__remove-product {
+        position: absolute;
+        top: 5px;
+        right: 5px;
+        font-weight: bold;
+        opacity: 30%;
+        cursor: pointer
+      }
+
+      .minicart__image {
+        width: 75px;
+        height: 75px;
+      }
+
+      .minicart__right__wrapper {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+
+        .minicart__name {
+          font-weight: normal;
+          text-align: right;
+        }
+
+        .minicart__price {
+          display: flex;
+          flex-direction: row-reverse;
+
+          .minicart__list-price {
+            text-decoration: line-through;
+            font-weight: normal;
+            margin-right: 10px;
+            opacity: 30%;
+          }
+        }
+      }
+    }
+  }
+
+  &__bottom {
+    position: absolute;
+    bottom: 0;
+
+    border-top: 2px solid $preto;
+    background-color: $cinza-medio;
+
+    width: 500px;
+    height: 145px;
+
+    padding: 20px;
+
+    display: flex;
+    flex-direction: column;
+
+    .bottom__price-total {
+      display: flex;
+      justify-content: space-between;
+
+      .price-total__price {
+        font-weight: bold;
+      }
+    }
+
+    .button {
+      &__my-bag {
+        font-size: 12px;
+        background-color: transparent;
+        appearance: none;
+        border: 0px;
+        color: $cinza-escuro;
+        text-decoration: underline;
+        text-align: left;
+      }
+
+      &__buy {
+        font-size: 16px;
+        color: $branco;
+        text-transform: uppercase;
+        background-color: $verde;
+        height: 50px;
+        border: 0px;
+        margin-top: 10px;
+      }
+
+      &__keep-buying {
+        font-size: 12px;
+        margin-top: 5px;
+        background-color: transparent;
+        appearance: none;
+        border: 0px;
+        color: $cinza-escuro;
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.minicart__box {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #0000004d;
+  z-index: 0;
+}
